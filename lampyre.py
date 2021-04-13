@@ -33,7 +33,7 @@ def new_api():
         except:
             continue
 
-    activation = driver.find_element_by_css_selector('.overflow-auto a').get_attribute('href')
+    activation = driver.find_element_by_css_selector('#info a').get_attribute('href')
     driver.get(activation)
     driver.get('https://account.lampyre.io/lighthouse/api')
     try:
